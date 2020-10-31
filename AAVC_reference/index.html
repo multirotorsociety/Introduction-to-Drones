@@ -1,0 +1,524 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.0">
+    
+    
+      
+        <title>AAVC Reference - MRS</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.bc7e593a.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab28b872.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#02a6f2">
+        
+      
+    
+    
+    
+      
+        
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans:300,400,400i,700%7C&display=fallback">
+        <style>body,input{font-family:"Noto Sans",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="light-blue" data-md-color-accent="blue">
+      
+  
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#aavc-autonomous-aerial-vehicle-competition-reference" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href=".." title="MRS" class="md-header-nav__button md-logo" aria-label="MRS">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.5 1C8 1 10 3 10 5.5c0 .88-.25 1.7-.69 2.4l.1.1h5.18l.1-.1c-.44-.7-.69-1.52-.69-2.4C14 3 16 1 18.5 1S23 3 23 5.5 21 10 18.5 10c-.88 0-1.7-.25-2.4-.69l-1.1 1.1v3.18l1.1 1.1c.7-.44 1.52-.69 2.4-.69 2.5 0 4.5 2 4.5 4.5S21 23 18.5 23 14 21 14 18.5c0-.88.25-1.7.69-2.4l-.1-.1H9.41l-.1.1c.44.7.69 1.52.69 2.4C10 21 8 23 5.5 23S1 21 1 18.5 3 14 5.5 14c.88 0 1.7.25 2.4.69l1.1-1.1v-3.18l-1.1-1.1c-.7.44-1.52.69-2.4.69C3 10 1 8 1 5.5S3 1 5.5 1m0 2A2.5 2.5 0 003 5.5 2.5 2.5 0 005.5 8 2.5 2.5 0 008 5.5 2.5 2.5 0 005.5 3m0 13A2.5 2.5 0 003 18.5 2.5 2.5 0 005.5 21 2.5 2.5 0 008 18.5 2.5 2.5 0 005.5 16m13-13A2.5 2.5 0 0016 5.5 2.5 2.5 0 0018.5 8 2.5 2.5 0 0021 5.5 2.5 2.5 0 0018.5 3m0 13a2.5 2.5 0 00-2.5 2.5 2.5 2.5 0 002.5 2.5 2.5 2.5 0 002.5-2.5 2.5 2.5 0 00-2.5-2.5M3.91 17.25l1.13.66c.13-.1.29-.16.46-.16a.75.75 0 01.75.75l-.01.1 1.13.65-.28.5-1.13-.66c-.13.1-.29.16-.46.16a.75.75 0 01-.75-.75l.01-.1-1.13-.65.28-.5m-.28-11l1.13-.65-.01-.1a.75.75 0 01.75-.75c.17 0 .33.06.46.16l1.13-.66.28.5-1.13.65.01.1a.75.75 0 01-.75.75c-.17 0-.33-.06-.46-.16l-1.13.66-.28-.5m13.28-2l1.13.66c.13-.1.29-.16.46-.16a.75.75 0 01.75.75l-.01.1 1.13.65-.28.5-1.13-.66c-.13.1-.29.16-.46.16a.75.75 0 01-.75-.75l.01-.1-1.13-.65.28-.5m-.28 15l1.12-.75a.75.75 0 01.75-.75c.17 0 .33.06.46.16l1.13-.66.28.5-1.12.75a.75.75 0 01-.75.75c-.17 0-.33-.06-.46-.16l-1.13.66-.28-.5z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            MRS
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              AAVC Reference
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header-nav__source">
+        
+<a href="https://github.com/multirotorsociety/mrs-documentation" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    mrs-documentation
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+
+  
+
+<nav class="md-tabs md-tabs--active" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href=".." class="md-tabs__link">
+        Home
+      </a>
+    
+  </li>
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../introduction_to_drones/" class="md-tabs__link md-tabs__link--active">
+          Documentation
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="MRS" class="md-nav__button md-logo" aria-label="MRS">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.5 1C8 1 10 3 10 5.5c0 .88-.25 1.7-.69 2.4l.1.1h5.18l.1-.1c-.44-.7-.69-1.52-.69-2.4C14 3 16 1 18.5 1S23 3 23 5.5 21 10 18.5 10c-.88 0-1.7-.25-2.4-.69l-1.1 1.1v3.18l1.1 1.1c.7-.44 1.52-.69 2.4-.69 2.5 0 4.5 2 4.5 4.5S21 23 18.5 23 14 21 14 18.5c0-.88.25-1.7.69-2.4l-.1-.1H9.41l-.1.1c.44.7.69 1.52.69 2.4C10 21 8 23 5.5 23S1 21 1 18.5 3 14 5.5 14c.88 0 1.7.25 2.4.69l1.1-1.1v-3.18l-1.1-1.1c-.7.44-1.52.69-2.4.69C3 10 1 8 1 5.5S3 1 5.5 1m0 2A2.5 2.5 0 003 5.5 2.5 2.5 0 005.5 8 2.5 2.5 0 008 5.5 2.5 2.5 0 005.5 3m0 13A2.5 2.5 0 003 18.5 2.5 2.5 0 005.5 21 2.5 2.5 0 008 18.5 2.5 2.5 0 005.5 16m13-13A2.5 2.5 0 0016 5.5 2.5 2.5 0 0018.5 8 2.5 2.5 0 0021 5.5 2.5 2.5 0 0018.5 3m0 13a2.5 2.5 0 00-2.5 2.5 2.5 2.5 0 002.5 2.5 2.5 2.5 0 002.5-2.5 2.5 2.5 0 00-2.5-2.5M3.91 17.25l1.13.66c.13-.1.29-.16.46-.16a.75.75 0 01.75.75l-.01.1 1.13.65-.28.5-1.13-.66c-.13.1-.29.16-.46.16a.75.75 0 01-.75-.75l.01-.1-1.13-.65.28-.5m-.28-11l1.13-.65-.01-.1a.75.75 0 01.75-.75c.17 0 .33.06.46.16l1.13-.66.28.5-1.13.65.01.1a.75.75 0 01-.75.75c-.17 0-.33-.06-.46-.16l-1.13.66-.28-.5m13.28-2l1.13.66c.13-.1.29-.16.46-.16a.75.75 0 01.75.75l-.01.1 1.13.65-.28.5-1.13-.66c-.13.1-.29.16-.46.16a.75.75 0 01-.75-.75l.01-.1-1.13-.65.28-.5m-.28 15l1.12-.75a.75.75 0 01.75-.75c.17 0 .33.06.46.16l1.13-.66.28.5-1.12.75a.75.75 0 01-.75.75c-.17 0-.33-.06-.46-.16l-1.13.66-.28-.5z"/></svg>
+
+    </a>
+    MRS
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/multirotorsociety/mrs-documentation" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    mrs-documentation
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      Documentation
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Documentation" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        <span class="md-nav__icon md-icon"></span>
+        Documentation
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../introduction_to_drones/" class="md-nav__link">
+      Introduction to Drones
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../introduction_to_advanced_drones/" class="md-nav__link">
+      Introduction to Advanced Drones
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        AAVC Reference
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" class="md-nav__link md-nav__link--active">
+      AAVC Reference
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#admin" class="md-nav__link">
+    Admin
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#misc-rules-and-tips" class="md-nav__link">
+    Misc Rules and tips
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#speccing" class="md-nav__link">
+    Speccing
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#some-personal-thoughts-on-frame-and-drone-type-in-2019" class="md-nav__link">
+    Some personal thoughts on frame and drone type in 2019
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#admin" class="md-nav__link">
+    Admin
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#misc-rules-and-tips" class="md-nav__link">
+    Misc Rules and tips
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#speccing" class="md-nav__link">
+    Speccing
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#some-personal-thoughts-on-frame-and-drone-type-in-2019" class="md-nav__link">
+    Some personal thoughts on frame and drone type in 2019
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="aavc-autonomous-aerial-vehicle-competition-reference">AAVC (Autonomous Aerial Vehicle Competition) Reference</h1>
+<p><a class="md-button md-button--primary" href="https://www.facebook.com/groups/1014035222041487/">Facebook for announcements</a>
+<a class="md-button md-button--primary" href="https://iaai.asia/aavc_Rule.html">Website for rules</a></p>
+<h2 id="admin">Admin</h2>
+<ul>
+<li>Update prof about design and purchasing of items as early as possible</li>
+<li>Inform Crystal (OSL) about overseas trip (once the team lineup is complete), there is alot of admin forms that need to be settled so do this before hand</li>
+<li>To wrap the drone, get bubble wrap from ARMS office</li>
+</ul>
+<h2 id="misc-rules-and-tips">Misc Rules and tips</h2>
+<ul>
+<li>No autonomous payload(guided or mothership)</li>
+<li>Rules might change on the spot</li>
+<li>Clarify the presentation venue and length, it was 3 minutes for AAVC 2020</li>
+<li>Spline waypoints are cool but you probably wont use it</li>
+<li>Mission Planner will randomly delete the takeoff or first command. If failure to change to auto mode error comes up check this. Use simulation tab to verify flight plan.</li>
+<li>3 Levels of Arbitrarily defined Autonomy for AAVC 2020,0 points for full manual, 2 points for waypoint(lvl 1), 4 for dynamically generated waypoints(lvl 2), 6 for automatically generated waypoints(lvl 3) which refers to pushing a single button or something like that.</li>
+<li><strong>Do not sacrifice points for autonomy over accuracy (if the former has less total points). If your CV solution cannot detect it reliably just take over and drop it near the target</strong></li>
+<li>Digital and Analog video transmission systems can interfere with each other, test before using</li>
+<li>It might be required to perform EMI shielding on certain electronics such as the Jetson or RPI to prevent it affecting the GPS, if that still does not work, increase the height of the GPS(away from the frame) with standoffs</li>
+<li>There will be multiple mannequins, be sure to check with the organizer the exact search area</li>
+<li>A cloth will be pasted on the injured area and the correct one will be face up</li>
+<li>With analog video(and possible digital) the mannequins cannot be identified at 20m. The drone has to descent either manually or autonomously for human or AI detection as it is simply too small(with the default wide angle cameras). For AAVC 2020 the altitude was 2-45m not 20-45m.</li>
+</ul>
+<h2 id="speccing">Speccing</h2>
+<p>For AAVC 2020 we speced the drone using the weight of the payload and the rough weight of the drone with generic parts. Then, we searched for efficient motors and high density batteries to fit the drone. The propellers and ESC are based on the motor requirements and the previously tested controllers were used for the FC and GPS. However, this might not be the ideal way to do it.</p>
+<p><a class="md-button md-button--primary" href="https://ecalc.ch/calcinclude/help/xcoptercalctutorial.htm">Ecalc Guide</a></p>
+<h2 id="some-personal-thoughts-on-frame-and-drone-type-in-2019">Some personal thoughts on frame and drone type in 2019</h2>
+<p>IMO with motors becoming more powerful and efficient such as the T-Motor U line, at least for a drone with an overall weight of 15kg it makes more sense to use four of these motors in a quad configuration(instead of a hexa or octaquad) to reduce the power draw, complexity and weight. To achieve this efficiency, large propellers have to be used which increases the frame size. This makes CF Rods/Square Tubes an ideal choice of material(due to its accessibility and ease of fabrication) as CF plates are not stiff enough and heavy in larger sheets which makes it impractical to use as a frame the larger it gets. The use of CF Rods in commercial drone with large propellers such as the DJI Matrice and the Freefly Alta X shows that perhaps using CF Rods as arms might be the effective option.</p>
+<p>Two of the more common motor designs for the quadrotor class are the x-frame and the h-frame designs. These configurations do not directly define the body of the drones but influence the design of the supporting structures and hence indirectly the weight.
+Though there are many variations of motor configurations involving different distances between the motors, IMO the difference is negligible when flying missions as the weight distribution matters more. </p>
+<p><img alt="logo" src="https://i.imgur.com/UGWarda.jpg" /></p>
+<p>IMO the x-frame configuration and its variants are harder to use as an test/mission platform over a h-frame/box-frame due to the following reasons.
+1) The h-frame/box-frame is more rigid as the body has more connected rods/joints than a x-frame. Trying to remedy this on a x-frame with more rods turns the design into effectively a h-frame. This is important considering the drone has to withstand abuse and crashes. This also ties in to the relatively easier construction/CAD of the h-frame which does not need to have angled parts or a fixed base plate unlike the x frame.
+2) The h-frame offers a large mounting area in between the two CF body rods while mounting on a x-frame arguably requires more planning as the base plate will have to be recut (or remoulded) to mount components differently.</p>
+<p>Dont take this as META, if you are reading this you probably are just starting out with drones so its okay to try something more tested but experimental drones will teach you more at the end of the day so dont be afraid to expierement.</p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../introduction_to_advanced_drones/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Introduction to Advanced Drones
+              </div>
+            </div>
+          </a>
+        
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/vendor.6a3d08fc.min.js"></script>
+      <script src="../assets/javascripts/bundle.71201edf.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: "..",
+          features: ['navigation.tabs'],
+          search: Object.assign({
+            worker: "../assets/javascripts/worker/search.4ac00218.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>

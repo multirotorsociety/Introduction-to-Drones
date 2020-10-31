@@ -1,0 +1,852 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.0">
+    
+    
+      
+        <title>Introduction to Drones - MRS</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.bc7e593a.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab28b872.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#02a6f2">
+        
+      
+    
+    
+    
+      
+        
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans:300,400,400i,700%7C&display=fallback">
+        <style>body,input{font-family:"Noto Sans",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="light-blue" data-md-color-accent="blue">
+      
+  
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#introduction-to-dronery" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href=".." title="MRS" class="md-header-nav__button md-logo" aria-label="MRS">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.5 1C8 1 10 3 10 5.5c0 .88-.25 1.7-.69 2.4l.1.1h5.18l.1-.1c-.44-.7-.69-1.52-.69-2.4C14 3 16 1 18.5 1S23 3 23 5.5 21 10 18.5 10c-.88 0-1.7-.25-2.4-.69l-1.1 1.1v3.18l1.1 1.1c.7-.44 1.52-.69 2.4-.69 2.5 0 4.5 2 4.5 4.5S21 23 18.5 23 14 21 14 18.5c0-.88.25-1.7.69-2.4l-.1-.1H9.41l-.1.1c.44.7.69 1.52.69 2.4C10 21 8 23 5.5 23S1 21 1 18.5 3 14 5.5 14c.88 0 1.7.25 2.4.69l1.1-1.1v-3.18l-1.1-1.1c-.7.44-1.52.69-2.4.69C3 10 1 8 1 5.5S3 1 5.5 1m0 2A2.5 2.5 0 003 5.5 2.5 2.5 0 005.5 8 2.5 2.5 0 008 5.5 2.5 2.5 0 005.5 3m0 13A2.5 2.5 0 003 18.5 2.5 2.5 0 005.5 21 2.5 2.5 0 008 18.5 2.5 2.5 0 005.5 16m13-13A2.5 2.5 0 0016 5.5 2.5 2.5 0 0018.5 8 2.5 2.5 0 0021 5.5 2.5 2.5 0 0018.5 3m0 13a2.5 2.5 0 00-2.5 2.5 2.5 2.5 0 002.5 2.5 2.5 2.5 0 002.5-2.5 2.5 2.5 0 00-2.5-2.5M3.91 17.25l1.13.66c.13-.1.29-.16.46-.16a.75.75 0 01.75.75l-.01.1 1.13.65-.28.5-1.13-.66c-.13.1-.29.16-.46.16a.75.75 0 01-.75-.75l.01-.1-1.13-.65.28-.5m-.28-11l1.13-.65-.01-.1a.75.75 0 01.75-.75c.17 0 .33.06.46.16l1.13-.66.28.5-1.13.65.01.1a.75.75 0 01-.75.75c-.17 0-.33-.06-.46-.16l-1.13.66-.28-.5m13.28-2l1.13.66c.13-.1.29-.16.46-.16a.75.75 0 01.75.75l-.01.1 1.13.65-.28.5-1.13-.66c-.13.1-.29.16-.46.16a.75.75 0 01-.75-.75l.01-.1-1.13-.65.28-.5m-.28 15l1.12-.75a.75.75 0 01.75-.75c.17 0 .33.06.46.16l1.13-.66.28.5-1.12.75a.75.75 0 01-.75.75c-.17 0-.33-.06-.46-.16l-1.13.66-.28-.5z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            MRS
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              Introduction to Drones
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header-nav__source">
+        
+<a href="https://github.com/multirotorsociety/mrs-documentation" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    mrs-documentation
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+
+  
+
+<nav class="md-tabs md-tabs--active" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href=".." class="md-tabs__link">
+        Home
+      </a>
+    
+  </li>
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="./" class="md-tabs__link md-tabs__link--active">
+          Documentation
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="MRS" class="md-nav__button md-logo" aria-label="MRS">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.5 1C8 1 10 3 10 5.5c0 .88-.25 1.7-.69 2.4l.1.1h5.18l.1-.1c-.44-.7-.69-1.52-.69-2.4C14 3 16 1 18.5 1S23 3 23 5.5 21 10 18.5 10c-.88 0-1.7-.25-2.4-.69l-1.1 1.1v3.18l1.1 1.1c.7-.44 1.52-.69 2.4-.69 2.5 0 4.5 2 4.5 4.5S21 23 18.5 23 14 21 14 18.5c0-.88.25-1.7.69-2.4l-.1-.1H9.41l-.1.1c.44.7.69 1.52.69 2.4C10 21 8 23 5.5 23S1 21 1 18.5 3 14 5.5 14c.88 0 1.7.25 2.4.69l1.1-1.1v-3.18l-1.1-1.1c-.7.44-1.52.69-2.4.69C3 10 1 8 1 5.5S3 1 5.5 1m0 2A2.5 2.5 0 003 5.5 2.5 2.5 0 005.5 8 2.5 2.5 0 008 5.5 2.5 2.5 0 005.5 3m0 13A2.5 2.5 0 003 18.5 2.5 2.5 0 005.5 21 2.5 2.5 0 008 18.5 2.5 2.5 0 005.5 16m13-13A2.5 2.5 0 0016 5.5 2.5 2.5 0 0018.5 8 2.5 2.5 0 0021 5.5 2.5 2.5 0 0018.5 3m0 13a2.5 2.5 0 00-2.5 2.5 2.5 2.5 0 002.5 2.5 2.5 2.5 0 002.5-2.5 2.5 2.5 0 00-2.5-2.5M3.91 17.25l1.13.66c.13-.1.29-.16.46-.16a.75.75 0 01.75.75l-.01.1 1.13.65-.28.5-1.13-.66c-.13.1-.29.16-.46.16a.75.75 0 01-.75-.75l.01-.1-1.13-.65.28-.5m-.28-11l1.13-.65-.01-.1a.75.75 0 01.75-.75c.17 0 .33.06.46.16l1.13-.66.28.5-1.13.65.01.1a.75.75 0 01-.75.75c-.17 0-.33-.06-.46-.16l-1.13.66-.28-.5m13.28-2l1.13.66c.13-.1.29-.16.46-.16a.75.75 0 01.75.75l-.01.1 1.13.65-.28.5-1.13-.66c-.13.1-.29.16-.46.16a.75.75 0 01-.75-.75l.01-.1-1.13-.65.28-.5m-.28 15l1.12-.75a.75.75 0 01.75-.75c.17 0 .33.06.46.16l1.13-.66.28.5-1.12.75a.75.75 0 01-.75.75c-.17 0-.33-.06-.46-.16l-1.13.66-.28-.5z"/></svg>
+
+    </a>
+    MRS
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/multirotorsociety/mrs-documentation" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    mrs-documentation
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      Documentation
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Documentation" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        <span class="md-nav__icon md-icon"></span>
+        Documentation
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Introduction to Drones
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" class="md-nav__link md-nav__link--active">
+      Introduction to Drones
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#basic-components" class="md-nav__link">
+    Basic Components
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#propellers-props" class="md-nav__link">
+    Propellers (Props)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#power-distribution-board-pdb" class="md-nav__link">
+    Power Distribution Board (PDB)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#motors" class="md-nav__link">
+    Motors
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#electronic-speed-controller-esc" class="md-nav__link">
+    Electronic Speed Controller (ESC)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#batteries-lipo" class="md-nav__link">
+    Batteries (Lipo)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#radio-controllerstransmitter" class="md-nav__link">
+    Radio Controllers/Transmitter
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#receivers" class="md-nav__link">
+    Receivers
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#flight-controller-fc" class="md-nav__link">
+    Flight Controller (FC)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#flight-stack" class="md-nav__link">
+    Flight Stack
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#connections-wip" class="md-nav__link">
+    Connections (WIP)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#betaflight-configuration" class="md-nav__link">
+    Betaflight configuration
+  </a>
+  
+    <nav class="md-nav" aria-label="Betaflight configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#esc-calibration" class="md-nav__link">
+    ESC calibration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#radio-calibration" class="md-nav__link">
+    Radio calibration
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#supplementary" class="md-nav__link">
+    Supplementary
+  </a>
+  
+    <nav class="md-nav" aria-label="Supplementary">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#video-camera" class="md-nav__link">
+    Video Camera
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pid-tuning-and-rates" class="md-nav__link">
+    PID Tuning and Rates
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#some-videos-for-more-advanced-or-indepth-topics-if-you-would-like-to-know-more" class="md-nav__link">
+    Some videos for more advanced or indepth topics if you would like to know more
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../introduction_to_advanced_drones/" class="md-nav__link">
+      Introduction to Advanced Drones
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../AAVC_reference/" class="md-nav__link">
+      AAVC Reference
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#basic-components" class="md-nav__link">
+    Basic Components
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#propellers-props" class="md-nav__link">
+    Propellers (Props)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#power-distribution-board-pdb" class="md-nav__link">
+    Power Distribution Board (PDB)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#motors" class="md-nav__link">
+    Motors
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#electronic-speed-controller-esc" class="md-nav__link">
+    Electronic Speed Controller (ESC)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#batteries-lipo" class="md-nav__link">
+    Batteries (Lipo)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#radio-controllerstransmitter" class="md-nav__link">
+    Radio Controllers/Transmitter
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#receivers" class="md-nav__link">
+    Receivers
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#flight-controller-fc" class="md-nav__link">
+    Flight Controller (FC)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#flight-stack" class="md-nav__link">
+    Flight Stack
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#connections-wip" class="md-nav__link">
+    Connections (WIP)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#betaflight-configuration" class="md-nav__link">
+    Betaflight configuration
+  </a>
+  
+    <nav class="md-nav" aria-label="Betaflight configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#esc-calibration" class="md-nav__link">
+    ESC calibration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#radio-calibration" class="md-nav__link">
+    Radio calibration
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#supplementary" class="md-nav__link">
+    Supplementary
+  </a>
+  
+    <nav class="md-nav" aria-label="Supplementary">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#video-camera" class="md-nav__link">
+    Video Camera
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pid-tuning-and-rates" class="md-nav__link">
+    PID Tuning and Rates
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#some-videos-for-more-advanced-or-indepth-topics-if-you-would-like-to-know-more" class="md-nav__link">
+    Some videos for more advanced or indepth topics if you would like to know more
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="introduction-to-dronery">Introduction to Dronery</h1>
+<p>This quick start guide should provide you with the basic knowledge needed to understand what is required to setup a basic drone. This <strong>guide will not go into depth about all drone related topics but should provide a basis to allow you to understand how to read online documentation</strong>. As the standards keep changing and manufacturers continue to release new products, <strong>it is vital that you learn how to read online documentation and manuals</strong>.</p>
+<h2 id="basic-components">Basic Components</h2>
+<p><img alt="logo" src="https://imgur.com/AxbRCdi.png" /></p>
+<h2 id="propellers-props">Propellers (Props)</h2>
+<p>Firstly, the things that create lift, the propellers.<br />
+<strong>This should always be put on LAST only after all other checks have been performed. ALWAYS CHECK YOUR SURROUNDINGS AND ASK SOMEONE WITH EXPERIENCE TO CHECK BEFORE PUTTING ON PROPELLERS FOR MAIDEN FLIGHT. The propellers can gravely injure people.</strong> </p>
+<p align="center">
+  <img src=https://imgur.com/oabVHUj.png />
+  Betaflight default X-frame quadcopter prop configuration
+</p>
+
+<p>You would notice that the Motors marked 1 and 4 spin clockwise and the Motors marked 2 and 3 spin anticlockwise. Before placing the propellers, <strong>ensure that the correct CW/CCW propellers are used for the correct motors</strong>. If the motors spin clockwise, the nut should be tightened anticlockwise(and vice versa). This prevents the propellers from loosening during flight.</p>
+<p>Different frame configurations will have different motor directions. When in doubt, refer to the documentation on the flightstack(betaflight) itself.</p>
+<h2 id="power-distribution-board-pdb">Power Distribution Board (PDB)</h2>
+<p>Supplies power from the battery to the motors and converts the battery voltage to 5V for the flight controller, regulates power input to prevent the electronics onboard from damaging levels of power.
+The PDB should be orientated such that the big solder pads for the battery terminals should be mounted in the right orientation so that the battery leads can be easily accessed.</p>
+<p align="center">
+  <img src=https://cdn.getfpv.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/f/c/fchub-6s_main.jpg />
+</p>
+
+<p>Certain PDBs have S1,S2,S3,S4 connections which can be used to wire up motor PWM inputs. In this case, ensure that the S1,S2,S3,S4 corresponds to Motor1,M2,M3,M4. A ribbon cable or wire harness is used to connect the motor inputs to the main flight controller. However the purpose of this is to simplify wiring, there are ports to connect the motor inputs on the flight controller itself.</p>
+<h2 id="motors">Motors</h2>
+<p>The Motors spin and generate thrust when used with the propellers. They have CW(clockwise) and CCW(Counter clockwise) orientations denoted by the colored screw caps which is threaded in the opposite direction from the rotation to self tighten and prevent propellers from flying out.</p>
+<p><img alt="logo" src="https://us-w1-img-listing.eccang.com/0/dnU2QUpieHE1d1NoMCtOek90MWFZUT09/201808/2767831UYdEoSm8.jpg" /> </p>
+<p>These motors can spin in the wrong direction, to fix that, either reverse it in firmware (if the ESC supports it) or <strong>swap any of the 2 motor wires</strong>.</p>
+<h2 id="electronic-speed-controller-esc">Electronic Speed Controller (ESC)</h2>
+<p>These circuits help to regulate the speed of the motors, they take a PWM signal from the flight controller and combine them with the high power from the PDB/Battery to allow for control of the motor.</p>
+<p>For smaller drones, you can find an esc all in one combined with a PDB or even built into the FC but larger drones require a standalone ESC for each motor due to the high power drawn.</p>
+<table>
+<thead>
+<tr>
+<th align="center">All in one ESC Board</th>
+<th align="center">Standalone ESC</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><img alt="" src="https://cdn.getfpv.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/k/i/kiss-compactctrl-cc-all-in-one.jpg" /></td>
+<td align="center"><img alt="" src="https://www.electricwingman.com/img/product/large/TMotorFlame60AESC4.jpg" /></td>
+</tr>
+</tbody>
+</table>
+<p>On Standalone ESCs, There will be 3 motor wires on one side of the board, and 4/5 wires on the other side of the board. On the other side with 4/5 wires, two of the wires are for battery voltage and battery ground and will be soldered to the PDB. These wires are thicker than the other wires to carry more current. The other 2/3 wires are for signal/ground or signal/power/ground(ignore power for now). The signal should be plugged into the S1/S2/S3/S4 ports respectively and the ground can be plugged into any ground port.</p>
+<p><img alt="logo" src="https://tocircuit.com/wp-content/uploads/2019/11/direct_bb-1024x346.png" /></p>
+<h2 id="batteries-lipo">Batteries (Lipo)</h2>
+<p>The batteries come with many different chemistries but generally we use the term LiPos (short for Lithium Polymer). A single lipo cell can usually be used from 4.2 to 3.5V. Overdischarge or overcharge results in the battery spoiling. LiPos have a high rate of discharge given by the C rating on the battery which allows the motor to suck more current than regular batteries. </p>
+<p>This is made possible by the low resistance which is essential for the application of drones due to the high current that is drawn by the motors. As a result, a single short across the positive and negative wires is enough to kill the battery and cause an electrical fire due to the low internal resistance unlike AA/AAA batteries. <strong>Special precaution has to be taken when handling lipos</strong> to prevent puncture of cells or overcharge/discharge. </p>
+<p>In terms of charging, the safest way to charge lipos is by 1A per 1000mah(battery capacity). So a 500mah battery would charge at 0.5A. This rate is 1C, different manufacturers can specify different charge and discharge rates for the battery but to preserve battery health a charge rate of 1C is advised.</p>
+<p>Lipo chargers allow for charging to HV(4.35V instead of 4.2v) and some do not automatically set a safe current/voltage when charging so do be careful about that.</p>
+<p align="center">
+  <img src="https://cdn-global-hk.hobbyking.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/1/7/176399_9067000273-0.jpg" />
+</p>
+
+<p>For long term storage, lipos have to be discharged to its nominal voltage which is usually around 3.7V.<br />
+This is known as <strong>storage charging</strong>.</p>
+<h2 id="radio-controllerstransmitter">Radio Controllers/Transmitter</h2>
+<p>This transmits a radio signal which is picked up by the receiver on the drone.</p>
+<p align="center">
+  <img src=http://static1.squarespace.com/static/540b470be4b02405057761f4/5aa35ea68165f533f6f5051e/5aa38c4f08522936111380e4/1575904887238/?format=1500w />
+</p>
+<p>Radio controllers can have a module bay to add different transmitter modules.</p>
+<p><img alt="logo" src="https://marketchangers.files.wordpress.com/2017/05/dsc7040.jpg?w=930" /></p>
+<p>Most radio controllers can transmit around 6-12 channels with higher end controllers having up to 18 or more channels. Each channel has an analog value and corresponds to one control such as pitch, yaw or something else. To reduce the need of having one signal and ground wire for each individual channel, protocols are used to transmit multiple channels on a single pin/wire (with 1 ground) such as sbus, ppm, cppm, etc. Documentation on the configuration required can be found by searching individual recievers and radio controllers.</p>
+<h2 id="receivers">Receivers</h2>
+<p>Receivers receive the radio input transmitted by the radio controller.</p>
+<p><img alt="logo" src="https://oscarliang.com/ctt/uploads/2017/08/compact-receiver-options-for-mini-quad-racing-drone-frsky-flysky-tbs-crossfire-futaba-spktrum-r9-2.4ghz-900mhz.jpg" /></p>
+<p>There are many different transmission protocols made by different manufacturers such as Frsky,Flysky,Futaba,etc. All of which require a compatible transmitter(on the radio) and receiver talking on the same protocol. <strong>Even within a same manufacturer, there are different protocols that are incompatible with each other</strong>!</p>
+<p>Configuration can be done on the flight controller software(betaflight), and the radio transmitter and varies on different manufacturers.</p>
+<h2 id="flight-controller-fc">Flight Controller (FC)</h2>
+<p>The Flight Controller is the brain/CPU of the drone, it controls the drone movements and always contains a usb port for connection to a PC for configuration.</p>
+<p align="center">
+  <img src=https://imgaz1.staticbg.com/thumb/large/oaupload/banggood/images/38/39/ab3267c9-4273-4051-978b-94e80c7c898b.jpg />
+  <br>
+  Matek F405 Flight Controller
+</p>
+
+<p>The first thing to notice is the arrow located on the board. <strong>The tip of the arrow represents the front of the drone. The FC should be mounted in the correct orientation</strong>. Conveniently, this board has the pins labelled, but normally this will be indicated in the online manual. The important ports will be explained in greater detail below. <strong>Reading the manual of a FC is essential for understanding in all situations</strong>.</p>
+<p>The S1,S2,S3,S4 pins indicate the respective ESC PWM cables that needs to be connected with respect to the pins in the betaflight/flightstack configuration. While depending on the receiver and configuration TX,RX,SBUS pins can be used. </p>
+<h2 id="flight-stack">Flight Stack</h2>
+<p>Also known as the Firmware, the Flight Stack is the software which runs on the Flight Controller
+There are several popular Flight Stacks out there(some of which are forks of others) but the three main ones that we use are</p>
+<ul>
+<li><a href="https://github.com/betaflight/betaflight/wiki">Betaflight</a> (<em>Used primarily for racing/simple crafts</em>)</li>
+<li><a href="https://px4.io/">PX4</a></li>
+<li><a href="ardupilot.org">Ardupilot</a></li>
+</ul>
+<p>To configure these firmware's, these various software's are used:
+- <a href="https://github.com/betaflight/betaflight-configurator">Betaflight Configurator for Betaflight</a>
+- <a href="http://qgroundcontrol.com/">QGroundControl for PX4</a>
+- <a href="http://ardupilot.org/">Mission Planner for Ardupilot</a></p>
+<p>For simple flying/racing, betaflight is used but for drones that requires additional sensors or intelligence, PX4 or Ardupilot is used. <strong>We will be using betaflight for this workshop</strong>. The list of supported boards of each firmware is contionusly being updated on their individual websites.</p>
+<p><a href="#top">go to top</a></p>
+<h2 id="connections-wip">Connections (WIP)</h2>
+<p align="center">
+  <img src=https://www.picclickimg.com/d/l400/pict/271827335392_/1-pair-XT60-male-female-10CM-Silicon-Wire.jpg />
+</p>
+
+<p>In order of power coming out from battery. two battery connector wires(positive and negative) are connected to the PDB.</p>
+<p><strong>ENSURE BATTERY POLARITY IS CORRECT BEFORE PLUGGING IN</strong></p>
+<p align="center">
+  <img src=http://www.rcdronegood.com/wp-content/uploads/2016/08/Naze-32-Connection-Diagram.jpg />
+</p>
+
+<p>The PDB is then connected to the four motors each with 3 wires (in a all in one ESC board). In a standalone PDB, the power (+/-) leads are connected individually to the PDB and the motor PWM inputs are connected either directly to the Flight controller.
+The Flight Controller requires connection from the 5V/Ground and the PWM motor inputs minimally. 
+The Receiver is connected to the Flight Controller.</p>
+<p>And thats it!!! With this connections and after configuration your drone should be able to fly.</p>
+<h2 id="betaflight-configuration">Betaflight configuration</h2>
+<p>WIP</p>
+<h3 id="esc-calibration">ESC calibration</h3>
+<p>TBA</p>
+<h3 id="radio-calibration">Radio calibration</h3>
+<p>TBA</p>
+<h2 id="supplementary">Supplementary</h2>
+<h3 id="video-camera">Video Camera</h3>
+<p>All the camera requires is 5v and ground and it will broadcast a 5.8Ghz signal. Certain flight controllers can output video signal which overlays information such as battery level. There are different channels and bands ensure that multiple video feeds can be broadcasted at the same time on different frequencies.</p>
+<p><img alt="logo" src="https://learnassets.getfpv.com/learn/wp-content/uploads/2019/09/19212447/frequencyChart.png" /></p>
+<h3 id="pid-tuning-and-rates">PID Tuning and Rates</h3>
+<p>PID tuning is a complicated process that requires knowledge on how the drone flies. The tuning process will not be covered in this document as the workshop drone should fly fine with the default PID. <a href="https://oscarliang.com/quadcopter-pid-explained-tuning/">Many resources regarding this topic is avaliable online</a> and <a href="https://github.com/betaflight/betaflight/wiki/PID-Tuning-Guide">betaflight recommends that you tune it in acro</a> which is hard given the skill required for it and the space constraints. For now, here is the difference between PID and rates.</p>
+<p><img alt="logo" src="https://imgur.com/0wtD6J1.png" /></p>
+<p>PID controls the responsiveness and reaction of the quadcopter. This settings are used by the flight controller in all flight modes.</p>
+<p><img alt="logo" src="https://imgur.com/98hpgIr.png" /></p>
+<p>Rate controls the sensitivity of your drone from your transmitter. Higher rate means that the drone is move sensitive and moves faster while lower means the drone moves slower but gives more resolution on movements. The degrees/s at the end indicate how fast the drone can turn at full stick deflection in a given second. It is important to note that this rates do not control how to flight controller handles the drone but rather how sensitive your inputs on your radio transmitter are. </p>
+<p>Rate profile are given in curves, which allows for lower sensitivity and more precise movements in the middle but the higher sensitivity at the end allows for the pilot to do large maneuvers when the sticks are deflected to the end.</p>
+<h2 id="some-videos-for-more-advanced-or-indepth-topics-if-you-would-like-to-know-more">Some videos for more advanced or indepth topics if you would like to know more</h2>
+<p><a href="https://www.youtube.com/watch?v=-mLuU1Nscu4">Electronic Speed Controllers (ESCs) and how they drive Brushless Motors</a></p>
+<p><a href="https://www.youtube.com/playlist?list=PLn8PRpmsu08pQBgjxYFXSsODEF3Jqmm-y">Understanding PID Control</a></p>
+<p><a href="https://www.youtube.com/watch?v=hGcGPUqB67Q">Drone Control Dynamics 1</a></p>
+<p><a href="https://www.youtube.com/watch?v=GK1t8YIvGM8">Drone Control Dynamics 2</a></p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href=".." class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Home
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../introduction_to_advanced_drones/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Introduction to Advanced Drones
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/vendor.6a3d08fc.min.js"></script>
+      <script src="../assets/javascripts/bundle.71201edf.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: "..",
+          features: ['navigation.tabs'],
+          search: Object.assign({
+            worker: "../assets/javascripts/worker/search.4ac00218.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>
